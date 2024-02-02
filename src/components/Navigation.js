@@ -25,6 +25,8 @@ const NavigationStyled = styled.nav`
     justify-content: space-between;
     min-height: 10vh;
     align-items: center;
+    font-size: 17px; // edited
+    padding-top: 5px; // edited
 
     ul {
         display: flex;

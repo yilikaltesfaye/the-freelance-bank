@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--neutral-light);
         color: white;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     a {
         color: inherit;
