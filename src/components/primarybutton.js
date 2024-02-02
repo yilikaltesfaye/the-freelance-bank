@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function primarybutton({name}) {
+function PrimaryButton({name}) {
   return (
     <ButtonStyled>
       {name}
@@ -20,4 +20,4 @@ const ButtonStyled = styled.button`
   border: none;
   cursor: pointer;
 `;
-export default primarybutton
+export default PrimaryButton

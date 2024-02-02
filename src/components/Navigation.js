@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import PrimaryButton from './primarybutton';
+import PrimaryButton from './PrimaryButton';
 import logo from '../img/logo.svg'
 
 function Navigation() {
@@ -10,9 +10,12 @@ function Navigation() {
             <img src={logo} alt="" />
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            {/* <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Pricing</a></li> */}
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
         </ul>
         <PrimaryButton name ={'Sign Up'} />
     </NavigationStyled>

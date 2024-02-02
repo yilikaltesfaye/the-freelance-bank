@@ -42,10 +42,11 @@ const HeaderContentStyled = styled.div`
       font-weight: 600;
     }
     .white{
-      padding: 1.4rem 0;
+      padding: 1.2rem 0;
       font-size: 14px;
       text-align: start;
       font-weight: 300;
+      color: white;
       line-height: 1.1rem;
     }
   }
