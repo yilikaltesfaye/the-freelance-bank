@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         --neutral-light: #F2F6FF;
         --lavender-secondary: #6A6D9E;
         --dark-primary: #16194F;
-        --border-colour: #CAB6F1;
+        --border-colour: #CAD6F1;
     }  
     * {
         margin: 0;
@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.9rem
     }
     .secondary-heading{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         color: var(--purple-primary);
     }
 `;

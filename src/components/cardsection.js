@@ -26,6 +26,8 @@ function CardSection() {
 }
 
 const CardSectionStyled = styled.section`
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -35,7 +37,7 @@ const CardSectionStyled = styled.section`
             justify-content: flex-end;
 
             img{
-                width: 70%;
+                width: 95%;
             }
         }
         .card-left{
