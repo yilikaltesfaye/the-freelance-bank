@@ -31,10 +31,8 @@ function HeaderContent() {
 const HeaderContentStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* padding-top: 3rem; */
   .left-content {
     display: flex;
-    /* align-items: center; */
     padding-right: 4rem;
     h1 {
       padding-top: 10rem; //edited
@@ -43,7 +41,6 @@ const HeaderContentStyled = styled.div`
     }
     .white{
       padding: 1.2rem 0;
-      font-size: 14px;
       text-align: start;
       font-weight: 300;
       color: white;
@@ -56,7 +53,7 @@ const HeaderContentStyled = styled.div`
     justify-content: center;
     padding-top: 0.5rem; //edited
     .phone {
-      width: 85%;
+      width: 87%;
       position: relative;
       left: 15px;
     }
