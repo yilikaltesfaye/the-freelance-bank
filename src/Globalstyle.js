@@ -30,8 +30,16 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.9rem
     }
     .secondary-heading{
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: var(--purple-primary);
+    }
+    .small-heading {
+        font-size: 1.8rem;
+        color: var(--purple-primary);
+        text-align: center;
+    }
+    span {
+        color: var(--accent-pink);
     }
 `;
 
