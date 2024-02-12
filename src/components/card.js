@@ -10,13 +10,15 @@ function Card({
             {account}
         </h4>
         <h4 className="card-title">
-            {amount} <span>\m</span>
+            {amount} <span>/ m</span>
         </h4>
-        <p>{text}</p>
+        <p className='center-p'>{text}</p>
         <div className="button-container">
             <button>{button}</button>
         </div>
-        <img src={Card} alt="" />
+        <div className="card-img-container">
+            <img src={Card} alt="" />
+        </div>
         <div className="plan-container">
             <img src={active} alt="" />
             <img src={inactive} alt="" />
@@ -61,9 +63,10 @@ function Card({
 
 const CardStyled = styled.div`
     background-color: white;
-    padding: 3rem 2rem;
-    border-radius: 30px;
-    
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
+    /* width: 90%; */
     .card-title{
         font-size: 2.5rem;
         color: #000;
@@ -84,6 +87,41 @@ const CardStyled = styled.div`
             background: transparent;
             border-radius: 20px;
             font-size: inherit;
+            color: #16494f;
+        }
+    }
+    .card-img-container{
+        display: flex;
+        justify-content: center;
+        img {
+            width: 80%;
+        }
+    }
+    .plan-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+        img{
+            padding: 0 .3rem;
+        }
+    }
+    .text-check{
+        display: flex;
+        align-items: center;
+        padding: .4rem 0;
+        img{
+            padding-right: .3rem;
+            width: 24px;
+        }
+        &:nth-child(6){
+            color: #b7b7b7;
+        }
+        &:nth-child(7){
+            color: #b7b7b7;
+        }
+        &:nth-child(8){
+            color: #b7b7b7;
         }
     }
 `;

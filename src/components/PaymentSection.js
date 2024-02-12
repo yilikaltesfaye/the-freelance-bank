@@ -16,7 +16,7 @@ function PaymentSection() {
                 An exceptional service, 
                 <span>at the right place</span>
             </h3>
-            <p>Start with our free plan and switch to premium as you grow.</p>
+            <p className='center-p'>Start with our free plan and switch to premium as you grow.</p>
             <div className="card-container">
                 <Card 
                     account={'Free'}
@@ -39,8 +39,8 @@ function PaymentSection() {
                     />
 
                 <Card 
-                    account={'Free'}
-                    amount={'$0'}
+                    account={'Premium'}
+                    amount={'$30'}
                     text={'Manage your Business with a simple and efficient account.'}
                     button={'Get Started'}
                     Card={card}
@@ -68,9 +68,10 @@ const PaymentStyled = styled.section`
     .card-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        grid-gap: 3rem;
+        padding-top: 3.5rem;
     }
-    p {
+    .center-p {
         text-align: center;
     }
 `;
