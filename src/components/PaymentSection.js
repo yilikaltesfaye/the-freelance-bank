@@ -71,9 +71,6 @@ const PaymentStyled = styled.section`
         grid-gap: 3rem;
         padding-top: 3.5rem;
     }
-    .center-p {
-        text-align: center;
-    }
 `;
 
 export default PaymentSection

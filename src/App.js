@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Chartsection from './components/Chartsection';
 import MessagingSection from './components/MessagingSection';
 import PaymentSection from './components/PaymentSection';
+import FAQsection from './components/FAQsection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Chartsection />
           <MessagingSection />
           <PaymentSection />
+          <FAQsection />
         </MainStyled>
       </OuterLayout>
     </div>
