@@ -7,6 +7,7 @@ import MessagingSection from './components/MessagingSection';
 import PaymentSection from './components/PaymentSection';
 import FAQsection from './components/FAQsection';
 import Footer from './components/Footer';
+import { Fade } from 'react-awesome-reveal';
 
 function App() {
   return (
@@ -14,11 +15,19 @@ function App() {
       <Header />
       <OuterLayout>
         <MainStyled>
-          <CardSection />
-          <Chartsection />
-          <MessagingSection />
-          <PaymentSection />
-          <FAQsection />
+          <Fade direction="left">
+            <CardSection />
+          </Fade>
+          <Fade direction='right'>
+            <Chartsection />
+          </Fade>
+          <Fade direction="left">
+            <MessagingSection />
+          </Fade>  
+          <Fade direction='right'>
+            <PaymentSection />
+          </Fade>  
+            <FAQsection />
         </MainStyled>
       </OuterLayout>
       <Footer />

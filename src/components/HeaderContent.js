@@ -5,25 +5,30 @@ import phone from '../img/phone.svg'
 import ring1 from '../img/ring_orange.svg'
 import message1 from '../img/message_pink.svg'
 import message2 from '../img/message_blue.svg'
+import { Fade } from 'react-awesome-reveal'
 
 function HeaderContent() {
   return (
     <HeaderContentStyled>
-      <div className="left-content">
-        <div className="left-left-container">
-          <h1>Smart banking for freelancers</h1>
-          <p className="white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis optio blanditiis cumque reprehenderit, cupiditate aliquam suscipit eum quibusdam maiores nostrum provident qui a ipsum illum repellendus delectus voluptas perferendis corporis.
-          </p>
-          <SecondaryButton name={'Register Now'} />
+      <Fade direction='left' cascade>
+        <div className="left-content">
+          <div className="left-left-container">
+            <h1>Smart banking for freelancers</h1>
+            <p className="white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis optio blanditiis cumque reprehenderit, cupiditate aliquam suscipit eum quibusdam maiores nostrum provident qui a ipsum illum repellendus delectus voluptas perferendis corporis.
+            </p>
+            <SecondaryButton name={'Register Now'} />
+          </div>
         </div>
-      </div>
-      <div className="right-content">
-        <img src={phone} alt="" className='phone'/>
-        <img src={ring1} alt="" className='ring1'/>
-        <img src={message1} alt="" className='message1'/>
-        <img src={message2} alt="" className='message2'/>
-      </div>
+      </Fade>
+      <Fade direction='right'>
+        <div className="right-content">
+          <img src={phone} alt="" className='phone'/>
+          <img src={ring1} alt="" className='ring1'/>
+          <img src={message1} alt="" className='message1'/>
+          <img src={message2} alt="" className='message2'/>
+        </div>
+      </Fade>
     </HeaderContentStyled>
   )
 }

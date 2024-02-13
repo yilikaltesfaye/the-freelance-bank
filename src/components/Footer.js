@@ -20,35 +20,35 @@ function Footer() {
                 <ul className="bottom-nav">
                     <div className="links1">
                         <li>
-                            <a href="#">Team</a>
+                            <a href="_">Team</a>
                         </li>
                         <li>
-                            <a href="#">Press</a>
+                            <a href="_">Press</a>
                         </li>
                         <li>
-                            <a href="#">Fees</a>
+                            <a href="_">Fees</a>
                         </li>
                     </div>
                     <div className="links2">
                         <li>
-                            <a href="#">Services</a>
+                            <a href="_">Services</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="_">Projects</a>
                         </li>
                         <li>
-                            <a href="#">Affiliate</a>
+                            <a href="_">Affiliate</a>
                         </li>
                     </div>
                     <div className="links3">
                         <li>
-                            <a href="#">Terms of Use</a>
+                            <a href="_">Terms of Use</a>
                         </li>
                         <li>
-                            <a href="#">Privacy Policy</a>
+                            <a href="_">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="_">Contact Us</a>
                         </li>
                     </div>
                 </ul>

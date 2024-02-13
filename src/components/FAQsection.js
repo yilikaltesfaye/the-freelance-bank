@@ -4,13 +4,16 @@ import { InnerLayout } from '../styles/layouts';
 import lines from '../img/lines.svg'
 import questions from '../questions';
 import Question from './Question';
+import { Fade } from 'react-awesome-reveal';
 
 function FAQsection() {
   return (
     <FaqStyled>
         <InnerLayout>
-            <h3 className="small-heading">Frequently <span>Asked Questions</span></h3>
-            <p className='center-p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sit hic, sapiente ipsum repellat optio doloribus reiciendis delectus soluta dolor similique debitis alias aspernatur maxime.</p>
+            <Fade direction='left'>
+                <h3 className="small-heading">Frequently <span>Asked Questions</span></h3>
+                <p className='center-p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sit hic, sapiente ipsum repellat optio doloribus reiciendis delectus soluta dolor similique debitis alias aspernatur maxime.</p>
+            </Fade>
             <div className="lines">
                 <img src={lines} alt="" />
             </div>
@@ -22,10 +25,9 @@ function FAQsection() {
                     })
                 }
             </div>
-
         </InnerLayout>
     </FaqStyled>
-  )
+)
 }
 const FaqStyled = styled.section`
     .center-p{

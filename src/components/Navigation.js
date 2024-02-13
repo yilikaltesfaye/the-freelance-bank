@@ -2,20 +2,23 @@ import React from 'react'
 import styled from 'styled-components';
 import PrimaryButton from './PrimaryButton';
 import logo from '../img/logo.svg'
+import { Fade } from 'react-awesome-reveal';
 
 function Navigation() {
   return (
-    <NavigationStyled>
-        <div className="logo">
-            <img src={logo} alt="" />
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-        </ul>
-        <PrimaryButton name ={'Sign Up'} />
-    </NavigationStyled>
+    <Fade direction="top">
+        <NavigationStyled>
+            <div className="logo">
+                <img src={logo} alt="" />
+            </div>
+            <ul>
+                <li><a href="_">Home</a></li>
+                <li><a href="_">Features</a></li>
+                <li><a href="_">Pricing</a></li>
+            </ul>
+            <PrimaryButton name ={'Sign Up'} />
+        </NavigationStyled>
+    </Fade>
   )
 }
 

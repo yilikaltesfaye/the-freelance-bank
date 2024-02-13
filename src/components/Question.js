@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styled from 'styled-components'
 import plus from '../img/plus.svg'
 import minus from '../img/minus.svg'
+import { Fade } from 'react-awesome-reveal';
 
 function Question({title, description}) {
     const [ toggle, setToggle ] = useState(false);
@@ -12,17 +13,19 @@ function Question({title, description}) {
     }
 
   return (
-    <QuestionStyled>
-        <div className="q-container">
-            <div className="toggle-title">
-                <h4>{title}</h4>
-                <button onClick={btnToggler}>
-                    {toggle ? <img src={minus} alt="" /> : <img src={plus} alt="" /> }
-                </button>
+    <Fade direction='left' cascade>
+        <QuestionStyled>
+            <div className="q-container">
+                <div className="toggle-title">
+                    <h4>{title}</h4>
+                    <button onClick={btnToggler}>
+                        {toggle ? <img src={minus} alt="" /> : <img src={plus} alt="" /> }
+                    </button>
+                </div>
+                {toggle && <p>{description}</p>}
             </div>
-            {toggle && <p>{description}</p>}
-        </div>
-    </QuestionStyled>
+        </QuestionStyled>
+    </Fade>
   )
 }
 
