@@ -6,6 +6,7 @@ import Chartsection from './components/Chartsection';
 import MessagingSection from './components/MessagingSection';
 import PaymentSection from './components/PaymentSection';
 import FAQsection from './components/FAQsection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <FAQsection />
         </MainStyled>
       </OuterLayout>
+      <Footer />
     </div>
   );
 }
