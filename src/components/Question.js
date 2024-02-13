@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import styled from 'styled-components'
 import plus from '../img/plus.svg'
+import minus from '../img/minus.svg'
 
 function Question({title, description}) {
     const [ toggle, setToggle ] = useState(false);
@@ -16,7 +17,7 @@ function Question({title, description}) {
             <div className="toggle-title">
                 <h4>{title}</h4>
                 <button onClick={btnToggler}>
-                    <img src={plus} alt="" />
+                    {toggle ? <img src={minus} alt="" /> : <img src={plus} alt="" /> }
                 </button>
             </div>
             {toggle && <p>{description}</p>}
