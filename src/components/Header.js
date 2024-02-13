@@ -16,14 +16,23 @@ function Header() {
 }
 
 const HeaderStyled = styled.header`
-    height: 100vh;
+    min-height: 100vh;
     width: 100% ;
     background-image: url(${bg});
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
     .header-content {
-      padding: 0 9rem;
+      padding: 0 15rem;
+      @media screen and (max-width: 1347px) {
+        padding: 0 15rem;
+      }
+      @media screen and (max-width: 1186px) {
+          padding: 0 8rem;
+      }
+      @media screen and (max-width: 990px) {
+          padding: 0 4rem;
+      }
     }
 `;
 

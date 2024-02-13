@@ -31,6 +31,9 @@ const CardSectionStyled = styled.section`
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @media screen and (max-width: 845px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .card-right {
             display: flex;

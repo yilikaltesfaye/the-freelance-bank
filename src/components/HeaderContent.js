@@ -31,6 +31,11 @@ function HeaderContent() {
 const HeaderContentStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  
+  @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
   .left-content {
     display: flex;
     padding-right: 4rem;
@@ -38,6 +43,9 @@ const HeaderContentStyled = styled.div`
       padding-top: 10rem; //edited
       font-size: 2.8rem; //edited
       font-weight: 600;
+      @media screen and (max-width: 700px) {
+        font-size: 2rem; 
+      }
     }
     .white{
       padding: 1.2rem 0;
