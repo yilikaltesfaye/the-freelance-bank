@@ -22,7 +22,6 @@ const HeaderStyled = styled.header`
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
-    /* background-position-x: 100%; //edited */
     .header-content {
       padding: 0 9rem;
     }
