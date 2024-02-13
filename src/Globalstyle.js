@@ -8,7 +8,18 @@ const GlobalStyle = createGlobalStyle`
         --lavender-secondary: #6A6D9E;
         --dark-primary: #16194F;
         --border-colour: #CAD6F1;
-    }  
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background: #16194F;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background: #554DDE;
+    }
     * {
         margin: 0;
         padding: 0;
